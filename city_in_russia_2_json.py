@@ -25,6 +25,7 @@ class City:
         for i in range(1, 2540):
             if i%2==0 or i==0:
                 clean_list.append(list_with_city[i])
+        clean_list=list(set(clean_list))
         return clean_list
 
     def save_list(self,clean_list):
